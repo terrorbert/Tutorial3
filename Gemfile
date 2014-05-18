@@ -3,6 +3,11 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
+#gem "therubyracer"
+#gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails"
+gem "bootstrap-sass", '~> 3.1.1.1'
+gem 'sprockets', '~> 2.11.0'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 gem 'sqlite3'
@@ -23,7 +28,7 @@ end
 gem 'jquery-rails'
 
 group :test do
-  gem 'capybara', '1.1.2'
+  gem 'capybara', '2.2.1'
 end
 
 group :production do
